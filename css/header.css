@@ -1,0 +1,16 @@
+.navbar {
+  background-color: rgb(224, 95, 35);
+  text-align: center;
+}
+
+.nav-link {
+  margin: 0px 10px;
+  color: white !important;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+.nav-item a:hover {
+  text-decoration: underline !important;
+}

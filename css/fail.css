@@ -1,0 +1,41 @@
+img {
+    height: 100px;
+    width: auto;
+}
+
+p {
+    font-style: bold;
+    color: red;
+    padding: 30px 0px;
+    font-size: 24px;
+}
+
+a button {
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px 20px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.center {
+    justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        height: 70px;
+    }
+
+    a button {
+        height: auto;
+        width: 90%;
+    }
+}

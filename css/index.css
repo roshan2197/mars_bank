@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb {
+  margin: 0;
+  background-color: #e5e3e8;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 0px;
+}
+
+.container {
+  padding: 160px 15px;
+  max-width: 1920px;
+  height: 350px;
+  background-origin: padding-box;
+  background: url(../images/banking-customer.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px #1c1c1c65;
+}
+
+.output {
+  margin: 0;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: rgb(250, 250, 250);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 100px 15px;
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  content: "";
+  display: inline-block;
+  margin-left: 3px;
+  background-color: rgb(255, 255, 255);
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+h1.cursor::after {
+  height: 34px;
+  width: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.bank-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.bank-card-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+i {
+  font-size: 120px !important;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+  padding-top: 20px !important;
+  color: rgb(245, 245, 245);
+}
+
+.bank-card {
+  background-color: rgb(224, 95, 35);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  text-align: center;
+  padding: 10px !important;
+}
+
+.bank-card:focus,
+.bank-card:hover {
+  background-color: rgb(255, 81, 0);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
